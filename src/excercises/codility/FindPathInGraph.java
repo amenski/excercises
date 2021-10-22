@@ -37,7 +37,7 @@ public class FindPathInGraph {
 		ArrayList<ArrayList<Integer>> adjList = new ArrayList<ArrayList<Integer>>();
 		
 		for (int i = 0; i <= size; i++) {
-			adjList.add(new ArrayList<Integer>());
+			adjList.add(new ArrayList<Integer>()); // very inefficient, but simple. If there is int[] {1, 200, 10000}, it creates 10000 arrays
 		}
 		
 		for (int i = 0; i < A.length; i++) {
